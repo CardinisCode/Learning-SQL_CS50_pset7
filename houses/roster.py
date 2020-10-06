@@ -32,7 +32,7 @@ class Student:
 
     def __str__(self):
         if self.middle == 'None' or self.middle == None:
-            self.middle == None
+            self.middle = None
             return "%s %s, born %i" % (self.first, self.last, self.birth)
         else:
             return "%s %s %s, born %i" % (self.first, self.middle, self.last, self.birth)
@@ -67,7 +67,7 @@ def main(house_name, hogwarts_db):
 
     # However, if there should be any errors, they'll be caught and printed here:
     except Exception as error:
-        print("asd", error)
+        print("", error)
 
     # If all's successful and finished, we can close our program.
     exit(0)
